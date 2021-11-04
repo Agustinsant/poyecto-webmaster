@@ -15,7 +15,7 @@ body{
     top: 0; 
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 3;
     height: 70px;
     background-color: rgba(223, 223, 223, 0.5);
 }
@@ -31,8 +31,9 @@ body{
 .logo-nav{
     width: 180px;
     position: absolute;
-    top: 0;
-    left: calc(50% - 90px);
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .logo-nav img{
@@ -156,7 +157,7 @@ body{
     border: 1px solid rgba(0, 0, 0, 0.3);
     background-color: white;
     position: relative;
-    margin: -100px auto 30px auto;
+    margin: -100px auto 50px auto;
     /* margin-top: -100px; */
     z-index: 1;
     padding-top: 70px;
@@ -174,18 +175,18 @@ body{
 }
 
     
- .card-label{
+.card-label{
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: -20px auto 0 auto;
     width: 180px;
     height: 40px;
-    /* border-radius: 10px; */
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.3);
-    text-align: center;
 }
 .card-label>p{
-    padding-top: 7px;
     font-weight: 600;
 }
 
@@ -196,10 +197,7 @@ body{
 }
 
 .card-button{
-    /* width: 120px;
-    height: 30px; */
     padding: 8px 55px;
-    /* margin-bottom: 20px; */
     background-color: #FCC126;
     text-align: center;
 }
@@ -220,16 +218,24 @@ body{
     text-align: center;
 }
 
+.section-bg{
+    width: 100%;
+    padding: 20px;
+}
+
+.grey-bg{
+    background-color: rgb(243, 243, 243);
+}
 .gallery-container{
     width: 1200px;
-    margin: 50px auto 100px auto;
+    margin: 40px auto 50px auto;
 }
 
 .map-info{
     display: flex;
     justify-content: space-between;
     width: 1200px;
-    background-color: rgba(223, 223, 223, 0.5);
+    background-color: rgba(235, 235, 235, 0.5);
 
 }
 .posada-description{
@@ -325,6 +331,7 @@ body{
 
 textarea{
     resize: none;
+    
 }
 
 .contact-container{
@@ -389,7 +396,7 @@ textarea{
     border: 1px solid rgba(0, 0, 0, 0.3);
     width: 1200px;
     height: 400px;
-    margin: 0 auto -100px auto;
+    margin: 60px auto -100px auto;
     z-index: 2;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
 }
