@@ -13,3 +13,5 @@ $('.gallery-carrousel').slick({
     centerMode: true,
     focusOnSelect: true
   });
+
+  
