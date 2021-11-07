@@ -567,6 +567,24 @@ textarea{
         align-items: center;
         padding: 10px 20px;
     }
+
+    .form-submit {
+        text-align: right;
+    }
+    
+    .form-submit>input {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #0E9B53;
+        background-color: white;
+        color: #0E9B53;
+    }
+    
+    .form-submit>input:hover{
+        border: 1px solid #FCC126;
+        background-color: #FCC126;
+        color: white;
+    }
     .contact-separator{
         display: none;
         
