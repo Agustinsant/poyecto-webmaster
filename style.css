@@ -204,6 +204,7 @@ body{
     padding: 8px 55px;
     background-color: #FCC126;
     text-align: center;
+    transition: all 100ms ease;
 }
 
 .card-button:hover{
@@ -311,6 +312,7 @@ body{
     border: 1px solid #0E9B53;
     background-color: white;
     color: #0E9B53;
+    transition: all 100ms ease;
 }
 
 .form-submit>input:hover{
@@ -348,6 +350,7 @@ textarea{
     color: #0E9B53;
     font-size: 26px;
     margin: 40px 10px 0 10px;
+    transition: all 100ms ease;
 }
 
 .redes a:hover{
@@ -578,6 +581,7 @@ textarea{
         border: 1px solid #0E9B53;
         background-color: white;
         color: #0E9B53;
+        transition: all 100ms ease;
     }
     
     .form-submit>input:hover{
