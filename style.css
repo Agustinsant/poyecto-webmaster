@@ -242,6 +242,7 @@ body{
 }
 
 .map-info{
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 1200px;
@@ -249,6 +250,8 @@ body{
 
 }
 .posada-description{
+    position:absolute;
+    right: 15px;
     width: 50%;
     padding: 50px;
     text-align: right;
@@ -261,6 +264,11 @@ body{
     width: 50%;
     padding: 15px;
     box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+    transition: 200ms ease;
+}
+
+.map:hover{
+    width: 100%;
 }
 .map iframe{
     width: 100%;
@@ -277,6 +285,10 @@ body{
 
 .gallery-nav-custom{
     margin-top: 20px;
+}
+
+.gallery-responsive{
+    display: none;
 }
 .form-container{
     width: 50%;
@@ -527,6 +539,7 @@ textarea{
     }
 
     .posada-description{
+        position: static;
         width: 90%;
         margin: 0 auto;
         padding: 10px;
@@ -534,12 +547,16 @@ textarea{
     }
 
     .map{
-        position: relative;
+        /* position: static; */
         z-index: 2;
         background-color: white;
         width: 100%;
         padding: 10px;
         box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .map:hover{
+        pointer-events: none;
     }
     .map iframe{
         width: 100%;
@@ -549,6 +566,26 @@ textarea{
     .map img{
         display: none;
     }
+
+    .gallery-carrousel{
+        display: none;
+    }
+    .gallery-nav{
+        display: none;
+    }
+    
+    .gallery-responsive{
+        display: block;
+        width: 95%;
+        margin: 30px auto 10px auto;
+    }
+
+    .gallery-responsive img{
+        width: 100%;
+    }
+    
+
+    
 
     .footer-contact{
         position: relative;
@@ -627,4 +664,11 @@ textarea{
         text-align: center;
     }
 
+}
+
+@media (max-width: 380px){
+
+    #linkContacto{
+        display: none;
+    }
 }
