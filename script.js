@@ -1,6 +1,6 @@
 let dropDown = document.querySelector('.drop-down')
 dropDown.addEventListener('click', function(){
-  dropDown.classList.toggle('.show')
+  dropDown.classList.toggle('show')
 })
 
 
