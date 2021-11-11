@@ -54,7 +54,7 @@ body{
     transition: all 300ms ease;
 }
 
-.drop-down:hover ul, .drop-down:hover ul.show{
+.drop-down:hover ul, .drop-down ul.show{
     max-height: 400px;
 }
 
