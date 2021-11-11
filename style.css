@@ -318,12 +318,22 @@ body{
     border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
+input:focus { 
+    outline: 1px solid #FCC126;
+    border: 1px solid #FCC126 
+}
+
+textarea:focus{
+    outline: 1px solid #FCC126;
+    border: 1px solid #FCC126 ;
+}
+
 .form-submit {
     text-align: right;
 }
 
 .form-submit>input {
-    width: 100px;
+    width: 100%;
     padding: 5px;
     border: 1px solid #0E9B53;
     background-color: white;
@@ -377,9 +387,14 @@ textarea{
     text-align: center;
 }
 
-.mail>a{
+.redes-container a{
     text-decoration: none;
     color: black;
+    transition: all 100ms ease;
+}
+
+.redes-container a:hover{
+    color: #FCC126;
 }
 .mail span{
     font-size: 18px;
