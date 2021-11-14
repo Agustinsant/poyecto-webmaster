@@ -3,6 +3,11 @@ dropDown.addEventListener('click', function(){
   dropDown.classList.toggle('show')
 })
 
+let aDrop = document.querySelectorAll('.aDrop')
+aDrop.addEventListener('click', function(){
+  dropDown.classList.remove('show')
+})
+
 $(".gallery-carrousel").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
