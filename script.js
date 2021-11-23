@@ -1,12 +1,38 @@
-// let dropDown = document.querySelector('.drop-down')
-// dropDown.addEventListener('click', function(){
-//   dropDown.classList.toggle('show')
-// })
+const allTopLinks = document.querySelectorAll('.nav-link-top')
 
-// let aDrop = document.querySelectorAll('.aDrop')
-// aDrop.addEventListener('click', function(){
-//   dropDown.classList.remove('show')
-// })
+
+allTopLinks.forEach(link=>{
+  link.addEventListener('focus', function (){
+    this.parentElement.classList.add('focus')
+  })
+
+  if(link.nextElementSibling){
+    const submenu = link.nextElementSibling
+    const subMenuLinks = submenu.querySelectorAll('a')
+    const lastLinkIndex = subMenuLinks.length -1
+    const lastLink = subMenuLinks[lastLinkIndex]
+
+    lastLink.addEventListener('blur', function(){
+      link.parentElement.classList.remove('focus')
+    })
+  }
+})
+
+
+function oculta() {
+  if((document.documentElement.scrollTop || self.pageYOffset) > 700) {
+   document.querySelector("#logo-nav").classList.add("logo-translate"); 
+  }
+  else if((document.documentElement.scrollTop || self.pageYOffset) < 700) {
+    document.querySelector("#logo-nav").classList.remove("logo-translate"); 
+   }
+
+}
+
+onscroll = oculta;
+
+
+
 
 $(".gallery-carrousel").slick({
   slidesToShow: 1,
