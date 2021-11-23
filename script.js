@@ -20,11 +20,13 @@ allTopLinks.forEach(link=>{
 
 
 function oculta() {
-  if((document.documentElement.scrollTop || self.pageYOffset) > 700) {
+  if((document.documentElement.scrollTop || self.pageYOffset) > 650) {
    document.querySelector("#logo-nav").classList.add("logo-translate"); 
+   document.querySelector('.nav-bar-container').classList.add('navOnScroll')
   }
-  else if((document.documentElement.scrollTop || self.pageYOffset) < 700) {
-    document.querySelector("#logo-nav").classList.remove("logo-translate"); 
+  else if((document.documentElement.scrollTop || self.pageYOffset) < 650) {
+    document.querySelector("#logo-nav").classList.remove("logo-translate");
+    document.querySelector('.nav-bar-container').classList.remove('navOnScroll') 
    }
 
 }
