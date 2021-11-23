@@ -23,11 +23,13 @@ function oculta() {
   if((document.documentElement.scrollTop || self.pageYOffset) > 650) {
    document.querySelector("#logo-nav").classList.add("logo-translate"); 
    document.querySelector('.nav-bar-container').classList.add('navOnScroll')
+   document.querySelector('.drop-down-submenu').classList.add('drop-down-submenu-scroll')
   }
   else if((document.documentElement.scrollTop || self.pageYOffset) < 650) {
     document.querySelector("#logo-nav").classList.remove("logo-translate");
-    document.querySelector('.nav-bar-container').classList.remove('navOnScroll') 
-   }
+    document.querySelector('.nav-bar-container').classList.remove('navOnScroll')
+    document.querySelector('.drop-down-submenu').classList.remove('drop-down-submenu-scroll')
+  }
 
 }
 
